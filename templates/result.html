@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1 class="title">Prediction Result</h1>
+
+<div class="result-box">
+    <img src="{{ url_for('static', filename=image) }}" class="preview">
+
+    <h2>Disease Detected:</h2>
+    <p class="prediction">{{ label }}</p>
+<h2>Recommended Pesticide:</h2>
+<p class="prediction">{{ pesticide }}</p>
+
+
+    <a href="/home" class="back-btn">Back</a>
+</div>
+
+</body>
+</html>
